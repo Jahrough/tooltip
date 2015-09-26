@@ -1,0 +1,50 @@
+#ui-tooltip {
+    display: none;
+    color: #302C28;
+    text-align: left !important;
+    position: absolute;
+    max-width: 220px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 1px 1px rgba(191, 194, 197, 0.8);
+    -moz-box-shadow: 0 0 1px 1px rgba(191, 194, 197, 0.8);
+    box-shadow: 0 0 1px 1px rgba(191, 194, 197, 0.8);
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 1px solid #bfc2c5;
+}
+#ui-tooltip .content {
+    min-width: 20px;
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 12px;
+}
+#ui-tooltip .tip {
+    background: url('/img/tip.png') no-repeat 0 -29px;
+    height: 15px;
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    width: 30px;
+}
+#ui-tooltip.right .tip {
+    left: auto;
+    right: 15px;
+}
+#ui-tooltip.bottom .tip {
+    background-position: 0 -46px;
+    top: auto;
+    bottom: -14px;
+}
+#ie7 #ui-tooltip .tip,
+#ie8 #ui-tooltip .tip {
+    background-position: 0 0;
+}
+#ie7 #ui-tooltip.right .tip,
+#ie8 #ui-tooltip.right .tip {
+    background-position: 0 -29px;
+}
+#ie7 #ui-tooltip.bottom .tip,
+#ie8 #ui-tooltip.bottom .tip {
+    background-position: 0 -16px;
+}
